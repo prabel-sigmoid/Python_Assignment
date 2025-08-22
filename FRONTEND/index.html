@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Supabase File Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>📂 S3 File Manager</h1>
+    </header>
+
+    <div class="container">
+        <div class="toolbar">
+            <div class="left-controls">
+                <button onclick="goBack()">⬅ Back</button>
+                <div class="path-display" id="pathDisplay">/</div>
+            </div>
+            <div id="actions" style="display:none; gap: 0.5rem; display: flex;">
+                <button onclick="createFolder()"> New Folder</button>
+                <button onclick="document.getElementById('fileInput').click()">📤 Upload File</button>
+                <input type="file" id="fileInput" style="display:none" onchange="uploadFile(event)">
+            </div>
+
+        </div>
+
+        <div class="grid" id="grid"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

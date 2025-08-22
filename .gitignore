@@ -1,0 +1,40 @@
+# Byte-compiled / Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node / Frontend build files (if any)
+node_modules/
+dist/
+build/
+
+# VSCode / IDE settings
+.vscode/
+.idea/
+
+# Python packaging
+*.egg-info/
+*.egg
+*.pytest_cache/
+.coverage
+htmlcov/
+
+# Supabase local setup (if any)
+.supabase/
